@@ -229,7 +229,6 @@ html, body {
     z-index: 20;
     transition: background-color 0.2s;
     opacity: 1 !important;
-    padding-right: 30px;
     background-color: rgba(255, 255, 255, 0.6);
   }
 
@@ -565,4 +564,8 @@ html, body {
 .logo-img-container {
   width: 20%;
   margin: 0px auto;
+}
+
+.padding-logo-mobile {
+  padding-top: 80px !important;
 }
