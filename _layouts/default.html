@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  <div class="parallax parallax-mobile">
+
+    {% include head.html %}
+
+    <body>
+
+      {% include header.html %}
+
+      <main class="wrapper">
+          {{ content }}
+      </main>
+
+      {% include footer.html %}
+
+      {% include javascript.html %}
+    </body>
+
+  </div>
+
+</html>

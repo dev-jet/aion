@@ -1,0 +1,539 @@
+//.header-font {
+//  font-family: "Encode Sans Condensed",sans-serif;
+//  color: #40bded; !important;
+//  letter-spacing: 1px;
+//}
+
+html, body {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+}
+
+.wrapper {
+  width: 100%;
+  height: auto;
+}
+
+.header-background-color {
+  opacity: 0;
+}
+
+.header-font li a {
+  font-family: "Encode Sans Condensed",sans-serif !important;
+  font-family: "Open Sans",sans-serif !important;
+  color: #40bded !important;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-weight: 500;
+  transition: border-bottom 0.16s;
+}
+
+.header-font li a:hover {
+  border-bottom: 1.5px solid #40bded;
+}
+
+.header-list {
+  margin-left: 45%;
+}
+
+.first-list {
+  list-style-type: none;
+  padding: 0px;
+}
+
+.first-list li {
+  display: inline;
+  margin: 0px auto;
+
+  border: 1px solid deepskyblue;
+  padding: 8px 12px;
+  background-color: rgba(255, 255, 255, 0.6);
+  margin: 0px 5px;
+  color: deepskyblue;
+}
+
+.first-content {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  //background-color: rgba(0, 0, 0, 0);
+}
+
+.followus-list {
+  list-style-type: none;
+  float: left;
+  padding-left: 0px;
+}
+
+.followus-list li {
+  display: inline;
+  margin: 0px 10px;
+}
+
+.followus-list li a {
+  color: #12364c!important;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../../assets/imgs/bg-left.svg"), url("../../assets/imgs/bg-right.svg");
+
+  /* Set a specific height */
+  height: 100%;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed, fixed;
+  background-position: left, right;
+  background-repeat: no-repeat, no-repeat;
+  background-size: contain, contain;
+}
+
+.subscribe {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding: 15px 0px;
+}
+
+.footer {
+  width: 100%;
+  height: auto;
+}
+
+.footer-menu {
+  list-style-type: none;
+  text-align: left;
+  padding-left: 0px;
+}
+
+.footer-menu li a {
+  color: #40bded;
+  text-decoration: none;
+  line-height: 1.9;
+  font-family: "Encode Sans Condensed",sans-serif;
+  font-weight: 600;
+  font-size: .9rem;
+  letter-spacing: 1.3px;
+  text-transform: uppercase;
+}
+.footer-other-menu {
+  list-style-type: none;
+  padding-left: 0px;
+  text-align: left;
+}
+
+.footer-other-menu li {
+  display: inline;
+  margin: 0px 3%;
+}
+
+.footer-other-menu li a {
+  color: #12364c;
+}
+
+.last-footer {
+  width: 100%;
+  height: 100px;
+  background-color: gray;
+  line-height: 100px;
+  background-color: #12364c;
+  color: #fff;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+@media screen and (min-width: 919px){
+  .subscribe-input-size {
+    width: 100%;
+  }
+
+  .subscribe-button-size {
+    width: 150px;
+  }
+}
+
+@media screen and (max-width: 919px){
+  .followus-list-mobile {
+    list-style-type: none;
+    float: left;
+    padding-left: 0px;
+  }
+
+  .parallax-mobile {
+    /* The image used */
+    background-image: url("../../assets/imgs/bg-left.svg");
+
+    /* Set a specific height */
+    height: 1080px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .subscribe-button-size-mobile {
+    width: 100%;
+  }
+
+  .subscribe-input-mobile {
+    width: 100% !important;
+  }
+
+  .main-sub-width-mobile {
+    width: 100% !important;
+  }
+
+  .aion-mobile {
+    width: 68% !important;
+  }
+
+  .main-width-mobile {
+    width: 100% !important;
+  }
+
+  .first-content-mobile {
+    padding-top: 30px;
+  }
+
+  .margin-down-col-mobile {
+    margin-bottom: 5px;
+  }
+
+  .video-margin-mobile {
+
+  }
+
+  .whitepaper-vertical-mobile {
+    height: auto !important;
+  }
+
+  .wp-list-mobile {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    margin: 0px 15px;
+    top: 0;
+    left: 0;
+    z-index: 20;
+    transition: background-color 0.2s;
+    opacity: 1 !important;
+    padding-right: 30px;
+    background-color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.main-font-family {
+  font-family: "Open Sans",sans-serif !important;
+  font-weight: 200;
+  font-size: 33px;
+  letter-spacing: 0;
+  line-height: 1.4;
+}
+
+.main-sub-font-family {
+  font-family: "Open Sans",sans-serif!important;
+  font-weight: 300;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #212529;
+}
+
+.subscribe-font {
+  font-family: "Encode Sans Condensed",sans-serif!important;
+  letter-spacing: 1px;
+  font-size: 1.4rem;
+  font-weight: 400;
+}
+
+.other-container-font-family {
+  font-family: "Encode Sans Condensed",sans-serif!important;
+  letter-spacing: 1px;
+  font-size: 2rem!important;
+  font-weight: 800;
+  line-height: 1.25;
+  color: #12364c;
+}
+
+.other-container-sub-font-family {
+  font-family: "Open Sans",sans-serif!important;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #212529;
+}
+
+.default-button {
+  padding: 7px 15px;
+  background-color: rgba(255, 255, 255, 0.6);
+  color: #40bded;;
+  font-family: "Encode Sans Condensed",sans-serif;
+  font-size: 15px;
+  letter-spacing: 1px!important;
+  font-weight: 400!important;
+  border: 1px solid #40bded;
+  white-space: nowrap;
+  text-align: center;
+  text-decoration: none !important;
+}
+
+.the-network-div {
+  width: 100%;
+  height: auto;
+  background-color: #12364c;
+  padding: 50px 0px;
+}
+
+.press-gradient {
+  background: linear-gradient(to right, #73ccea, #0097c2) ;
+}
+
+// Timeline
+
+/* The actual timeline (the vertical ruler) */
+.timeline {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* The actual timeline (the vertical ruler) */
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: white;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+/* Container around content */
+.containerr {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+/* The circles on the timeline */
+.containerr::after {
+  content: '';
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  right: -17px;
+  background-color: white;
+  border: 2px solid #40bded;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.containerr:hover:after {
+  background-color: #12364c;
+}
+
+/* Place the container to the left */
+.left {
+  left: 0;
+}
+
+/* Place the container to the right */
+.right {
+  left: 50%;
+}
+
+/* Add arrows to the left container (pointing right) */
+.left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid white;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent white;
+}
+
+/* Add arrows to the right container (pointing left) */
+.right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid white;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent white transparent transparent;
+}
+
+/* Fix the circle for containers on the right side */
+.right::after {
+  left: -16px;
+}
+
+/* The actual content */
+.contentt {
+  //padding: 20px 30px;
+  //background-color: white;
+  //position: relative;
+  //border-radius: 6px;
+
+}
+
+.contentt h3 {
+  font-family: "Open Sans",sans-serif!important;
+  color: #12364c;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.contentt p {
+  line-height: 1;
+  font-size: 15px;
+  color: #12364c;
+  font-family: "Open Sans",sans-serif!important;
+  font-weight: 300;
+}
+
+.contentt p i {
+  color: #40bded;
+}
+
+/* Media queries - Responsive timeline on screens less than 600px wide */
+@media all and (max-width: 600px) {
+  /* Place the timelime to the left */
+  .timeline::after {
+    left: 31px;
+  }
+
+  /* Full-width containers */
+  .containerr {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  /* Make sure that all arrows are pointing leftwards */
+  .containerr::before {
+    left: 60px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+
+  /* Make sure all circles are at the same spot */
+  .left::after, .right::after {
+    left: 15px;
+  }
+
+  /* Make all right containers behave like the left ones */
+  .right {
+    left: 0%;
+  }
+}
+
+.footer-container {
+  background-color: white;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.footer-columns-font-family {
+  color: #12364c;
+  font-size: 1.4rem;
+  font-weight: 600;
+  font-family: "Encode Sans Condensed",sans-serif!important;
+  letter-spacing: 1px;
+}
+
+.footer-subscribe-header {
+  font-family: "Encode Sans Condensed",sans-serif;
+  font-weight: 600;
+  color: #12364c;
+  text-transform: uppercase;
+  font-size: .9rem;
+  letter-spacing: 1.3px;
+  margin-bottom: .7rem;
+}
+
+.whitepage-wrapper {
+  height: 100vh;
+  margin: 60px 0px;
+}
+
+.whitepaper-items {
+  border: 1px solid #40bded;
+  //transition: background-color 1s;
+}
+
+.whitepaper-items:hover {
+  //opacity: 0.5;
+}
+
+.wp-list {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  margin: 0px 15px;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  transition: background-color 0.2s;
+  opacity: 0;
+  padding-right: 30px;
+}
+
+.wp-list ul {
+  list-style-type: none;
+  padding-left: 0px;
+  height: 100%;
+  padding-top: 20%;
+}
+
+.wp-list ul li {
+  width: 65%;
+  background-color: #12364c;
+  padding: 5px 5px;
+  margin: 20px auto;
+  color: white;
+  border: 1px solid #12364c;
+}
+
+.wp-list ul li a {
+  //color: white !important;
+  text-decoration: none;
+  height: 100%;
+  width: 100%;
+}
+
+.wp-list ul li a:hover {
+  //color: #40bded !important;
+}
+
+.wp-list ul li:hover {
+  background-color: white;
+  border: 1px solid #12364c;
+  color: #12364c !important;
+}
+
+.wp-list:hover {
+  opacity: 1;
+  background-color: rgba(255, 255, 255, 0.6);
+}
